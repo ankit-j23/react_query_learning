@@ -12,7 +12,7 @@ export default function NewsCard({ article }) {
         <p className="text-sm text-gray-500">{article.publishedAt}</p>
         <p>{article.description || article.title}</p>
         <div className="card-actions justify-end">
-          <Link to={article.url} className="btn btn-primary btn-sm">
+          <Link target="_blank" to={article.url} className="btn btn-primary btn-sm">
             Read More
           </Link>
         </div>
